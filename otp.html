@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp</title>
+</head>
+<body>
+    <script>
+        function generateotp() {
+            let otplength=4
+            let otp=""
+            for(var i=0; i<otplength; i++) {
+
+                let randomnumbers=Math.floor(Math.random()*10)
+                otp+=randomnumbers
+        }
+        return otp
+        }
+        let otpgeneration=generateotp()
+        console.log("generated otp :" + otpgeneration);
+
+    </script>
+</body>
+</html>
